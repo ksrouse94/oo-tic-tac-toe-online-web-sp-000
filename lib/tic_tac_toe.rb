@@ -48,13 +48,7 @@ class TicTacToe
   
   def turn 
     input = gets
-    input = input_to_index(input)
-    if valid_move?(input) == TRUE
-      move(input, current_player(board))
-      display_board
-    elsif valid_move?(board, input) != TRUE
-      turn
-    end 
+    
   end 
   
   def turn_count
