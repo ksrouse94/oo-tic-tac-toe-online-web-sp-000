@@ -95,4 +95,12 @@ class TicTacToe
 end
 return false
 end 
+
+def full?
+  @board.each do |pos|
+    if(pos == " ")
+      return false
+    end  
+  end  
+end
 end  
