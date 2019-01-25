@@ -121,5 +121,18 @@ def winner
   end  
 end
 
-
+def play
+  until over?
+    current_player
+    turn
+    turn_count
+  end
+  if won?
+    char = winner
+    puts "Congratulations #{char}!"
+  elsif
+    draw?
+    puts "Cat's Game!"
+  end  
+end  
 end  
