@@ -49,7 +49,9 @@ class TicTacToe
   def turn 
     puts "Please enter 1-9: "
     input = gets
-    
+    input = input_to_index(input)
+    valid_move?(input)
+    current_player
   end 
   
   def turn_count
