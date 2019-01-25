@@ -108,5 +108,18 @@ def draw?
   full? && !won? 
 end
 
+def over?
+  won? || draw? || full?
+end
+  
+def winner
+  if won? == false
+    return nil
+  else
+    win = won?
+    return @board[win[0]]
+  end  
+end
+
 
 end  
