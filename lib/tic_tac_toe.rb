@@ -103,4 +103,8 @@ def full?
     end  
   end  
 end
+
+def draw?
+  full? && !won? 
+end
 end  
